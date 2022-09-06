@@ -10,10 +10,15 @@ class Stack:
 
   def push(self, data) -> None:
     # Write your code here
-
+    
+    
   def pop(self) -> None:
     # Write your code here
-
+    if self.top!=null
+    self.top = self.next
+    else
+    return 1
+    
   def status(self):
     """
     It prints all the elements of stack.
