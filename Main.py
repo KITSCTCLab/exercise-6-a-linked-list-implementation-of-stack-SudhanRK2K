@@ -1,29 +1,38 @@
 class Node:
   def __init__(self, data):
     self.data = data
-    self.n
+    self.next = None
+
+
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.next = None
 
 
 class Stack:
-  de
+  def __init__(self):
     self.head = None
 
   def push(self, data) -> None:
-    # Write your code here
-    if self.head == None:
-            self.head = Node(data)
-        else
-            self.head = newnode    
-  def pop(self) -> None:
-    # Write your code here
-    if self.head==None
-            
+    new = Node(data)
+    new.next = self.head
+    self.head = new
     
+
+  def pop(self) -> None:
+    if self.head != None:
+        self.head = self.head.next
+
   def status(self):
     """
     It prints all the elements of stack.
     """
-    # Write your code here  
+    temp = self.head
+    while temp is not None:
+        print(temp.data, end = "=>")
+        temp = temp.next
+    print("None")
 
 
 # Do not change the following code
