@@ -12,9 +12,7 @@ class Stack:
     # Write your code here
     if self.head == None:
             self.head = Node(data)
-        else:
-            newnode = Node(data)
-            newnode.next = self.head
+        else
             self.head = newnode    
   def pop(self) -> None:
     # Write your code here
